@@ -20,7 +20,7 @@ export default () => {
     }, [])
 
     useEffect(() => {
-        if (!showAddOrCreate)
+        if (!showAddOrCreate && events.length > 0)
             fetchEvents()
     }, [showAddOrCreate])
 
